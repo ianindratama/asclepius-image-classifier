@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ResultActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Analysis Result"
+                app:menu="@menu/result_app_bar"
+                app:navigationIcon="@drawable/baseline_arrow_back_24"
+                app:buttonGravity="center_vertical"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/result_image"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:elevation="0dp"
+            app:srcCompat="@drawable/ic_place_holder"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_analysisResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            tools:text="Cancer"
+            app:layout_constraintTop_toBottomOf="@id/result_image"/>
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:text="@string/result"
+            app:layout_constraintTop_toBottomOf="@id/tv_analysisResult"/>
+
+        <TextView
+            android:id="@+id/tv_inferenceTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            tools:text="Inference time: 120ms"
+            app:layout_constraintTop_toBottomOf="@id/result_text"/>
+
+        <TextView
+            android:id="@+id/tv_analyseOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            tools:text="Monday, 12 Februari 2024"
+            app:layout_constraintTop_toBottomOf="@id/tv_inferenceTime" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
