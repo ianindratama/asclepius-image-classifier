@@ -21,8 +21,12 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         val properties = Properties()
-        properties.load(project.rootProject.file("local.properties").inputStream())
-        buildConfigField("String", "NEWS_API_KEY", properties.getProperty("NEWS_API_KEY"))
+        val localProperties = project.rootProject.file("local.properties")
+        if (localProperties.exists()) {
+            localProperties.inputStream().use(properties::load)
+        }
+        val newsApiKey = properties.getProperty("NEWS_API_KEY", "").removeSurrounding("\"")
+        buildConfigField("String", "NEWS_API_KEY", "\"${newsApiKey.replace("\\", "\\\\").replace("\"", "\\\"")}\"")
     }
 
     buildTypes {

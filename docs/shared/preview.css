@@ -1,0 +1,28 @@
+@font-face { font-family: Poppins; src: url('Poppins-Regular.ttf') format('truetype'); font-weight: 400; }
+@font-face { font-family: Roboto; src: url('Roboto-regular.ttf') format('truetype'); font-weight: 400; }
+@font-face { font-family: Roboto; src: url('Roboto-bold.ttf') format('truetype'); font-weight: 700; }
+@font-face { font-family: Roboto; src: url('Roboto-light.ttf') format('truetype'); font-weight: 300; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: #eef1f5; color: #17212f; font-family: Arial, sans-serif; }
+.capture { width: max-content; min-width: 800px; padding: 32px 36px 26px; }
+.preview-header { margin-bottom: 24px; }
+.preview-header h1 { font-size: 25px; line-height: 1.25; margin: 0 0 7px; font-weight: 600; }
+.preview-header p { margin: 0; font-size: 13px; line-height: 1.5; color: #4b596b; max-width: 1000px; }
+.screens { display: flex; align-items: flex-start; gap: 24px; }
+.screen-group { width: 360px; }
+.screen-label { margin: 0 0 9px; font-size: 13px; font-weight: 600; }
+.screen { position: relative; width: 360px; height: 700px; overflow: hidden; background: white; border: 1px solid #ced5de; font-family: Roboto, Arial, sans-serif; }
+.statusbar { height: 24px; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; font-size: 11px; background: var(--primary, #6200ee); color: white; }
+.toolbar { height: 56px; padding: 0 16px; display: flex; align-items: center; gap: 18px; font-size: 20px; background: var(--primary, #6200ee); color: white; }
+.toolbar .grow { flex: 1; }
+.content { padding: 16px; }
+.bottom-nav { position: absolute; bottom: 0; height: 56px; display: flex; align-items: center; justify-content: space-around; left: 0; right: 0; border-top: 1px solid #ddd; background: #fff; }
+.bottom-nav span { text-align: center; font-size: 11px; }
+.field { min-height: 52px; border: 1px solid #777; border-radius: 4px; padding: 8px 12px; margin: 0 0 18px; color: #555; font-size: 14px; }
+.field small { display: block; font-size: 11px; margin-bottom: 5px; }
+.button { padding: 12px 16px; border-radius: 4px; text-align: center; font-size: 14px; background: var(--primary, #6200ee); color: white; }
+.muted { color: #68717c; }
+.preview-footer { margin: 18px 0 0; font-size: 12px; color: #4b596b; max-width: 1100px; line-height: 1.5; }
+.media-placeholder { display: flex; align-items: center; justify-content: center; background: #e5e8ed; color: #6a7480; font-size: 12px; }
+svg { vertical-align: middle; }

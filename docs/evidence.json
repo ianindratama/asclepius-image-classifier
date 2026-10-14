@@ -1,0 +1,53 @@
+{
+  "repository": "https://github.com/ianindratama/asclepius-image-classifier",
+  "commit": "75af6e42f88ef066f226fe64c8922ed980441c34",
+  "branch": "main",
+  "visualType": "source reconstruction",
+  "uiSources": [
+    "app/src/main/res/layout/activity_main.xml",
+    "app/src/main/res/layout/activity_history.xml",
+    "app/src/main/res/layout/activity_result.xml",
+    "app/src/main/res/drawable/ic_place_holder.xml",
+    "app/src/main/res/values/strings.xml",
+    "app/src/main/res/values/themes.xml",
+    "app/src/main/java/com/dicoding/asclepius/view/MainActivity.kt",
+    "app/src/main/java/com/dicoding/asclepius/view/ResultActivity.kt",
+    "app/src/main/java/com/dicoding/asclepius/view/HistoryActivity.kt"
+  ],
+  "mechanismSources": [
+    "app/src/main/java/com/dicoding/asclepius/helper/ImageClassifierHelper.kt",
+    "app/src/main/java/com/dicoding/asclepius/viewmodel/MainViewModel.kt",
+    "app/src/main/java/com/dicoding/asclepius/Utils.kt",
+    "app/src/main/java/com/dicoding/asclepius/data/local/AnalysisResultRepository.kt",
+    "app/src/main/java/com/dicoding/asclepius/data/local/AnalysisResult.kt",
+    "app/src/main/java/com/dicoding/asclepius/data/local/AnalysisResultDao.kt",
+    "app/src/main/java/com/dicoding/asclepius/data/local/AnalysisResultDatabase.kt",
+    "app/src/main/java/com/dicoding/asclepius/data/network/ApiService.kt",
+    "app/src/main/java/com/dicoding/asclepius/data/network/NewsRepository.kt",
+    "app/src/main/ml/cancer_classification.tflite",
+    "app/build.gradle.kts",
+    "build.gradle.kts"
+  ],
+  "limitations": [
+    "Native build attempt timed out after 180 seconds before task results; no APK, inference, or device behavior verified.",
+    "UI illustrates source-defined empty and initialization-error states, not observed runtime output; Material palette, icons, and metrics are approximate.",
+    "No patient image, prediction, confidence percentage, timing measurement, or real analysis record is depicted.",
+    "Model metadata provides Non Cancer and Cancer labels; training data, evaluation, and clinical validation are absent.",
+    "runBlocking invokes classification on the activity thread; responsiveness is unverified.",
+    "Image URIs use cache storage and the timestamp is initialized once per process; durable history behavior needs review.",
+    "NewsAPI requires a user-supplied key in ignored local.properties; requests were not run."
+  ],
+  "attribution": [
+    "Personal Dicoding machine-learning Android course submission based on its starter project.",
+    "The bundled model is course-provided; model training is not claimed as Ian's work.",
+    "Original com.dicoding package namespace is retained."
+  ],
+  "history": {
+    "retainedCommits": 1,
+    "metadata": "Author/committer names, dates and messages preserved; emails use GitHub noreply. Paths and hashes changed during extraction.",
+    "privateWorkspaceFiles": "Excluded from every retained revision."
+  },
+  "fontSources": [
+    "Roboto from previously reviewed GithubClone original assets; Apache license retained."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-14T08:36:12.445Z",
+  "sourceCommit": "75af6e42f88ef066f226fe64c8922ed980441c34",
+  "history": {
+    "retainedAppCommits": 1,
+    "namesDatesMessagesPreserved": true,
+    "email": "GitHub noreply",
+    "allRevisionsAudited": true,
+    "unrelatedPrivateWorkspaceFilesExcluded": true
+  },
+  "native": {
+    "command": "./gradlew --no-daemon --max-workers=2 assembleDebug",
+    "jdk": 17,
+    "sdk": 34,
+    "result": "Timed out after 180 seconds before task results; no APK or native tests verified.",
+    "temporaryResources": "Isolated Gradle cache; no emulator created."
+  },
+  "visual": {
+    "type": "Source reconstruction",
+    "screenCount": 3,
+    "runtimeCapture": false,
+    "limitations": [
+      "UI illustrates source-defined empty and initialization-error states, not observed runtime output; Material palette, icons, and metrics are approximate.",
+      "No patient image, prediction, confidence percentage, timing measurement, or real analysis record is depicted."
+    ]
+  },
+  "artifactChecks": [
+    "Mermaid 11.12.0 parsed and rendered to native SVG text",
+    "Offline Chrome rendered three source-based screen panels with external requests blocked",
+    "UI PNG visually inspected; local assets decoded; no JavaScript errors",
+    "Pinned evidence file paths checked against the extracted project"
+  ]
+}
